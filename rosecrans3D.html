@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <link rel="stylesheet" href="styles3D.css"/>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a-scene>
+      
+      <a-camera position="15 1 30"></a-camera>
+      
+      <a-assets>
+        <audio id="lofi-jazz" src="/audio/the-girl-from-ipanema.mp3"></audio>
+      </a-assets>
+
+      <a-image 
+               position="-1 4 -3" 
+               width="36" height="24"
+               src="https://cdn.glitch.global/597f60d9-9084-4c60-b2a7-aea2a2fd555c/rosecrans_backwall.png?v=1733109612147"
+               sound="src: #lofi-jazz; autoplay: true; loop: true"></a-image>>
+      </a-image>
+      
+      <a-image 
+               position="-18 4 15" 
+               width="36" height="23"
+               rotation="0 90 0"
+               src="https://cdn.glitch.global/597f60d9-9084-4c60-b2a7-aea2a2fd555c/rosecransleftwall.png?v=1733109690141">
+      </a-image>
+      
+      <a-image 
+               position="-8 1 1" 
+               width="12" height="18"
+               rotation="0 90 0"
+               src="https://cdn.glitch.global/597f60d9-9084-4c60-b2a7-aea2a2fd555c/rosecransshelf2.png?v=1733109711382">
+      </a-image>
+      
+      
+      <a-image 
+               position="8 -2 -1" 
+               width="9" height="13.5"
+               rotation="0 0 0"
+               src="https://cdn.glitch.global/597f60d9-9084-4c60-b2a7-aea2a2fd555c/rosecranswoman.png?v=1733109901480">
+      </a-image>
+      
+      
+      <a-image 
+               position="-7 1 7" 
+               width="12" height="18"
+               rotation="0 0 0"
+               src="https://cdn.glitch.global/597f60d9-9084-4c60-b2a7-aea2a2fd555c/rosecransshelf.png?v=1733109703414">
+      </a-image>
+      <a-image 
+               position="-1 1 1" 
+               width="12" height="18"
+               rotation="0 90 0"
+               src="https://cdn.glitch.global/597f60d9-9084-4c60-b2a7-aea2a2fd555c/rosecransshelf2.png?v=1733109711382">
+      </a-image>
+      
+      <a-image 
+               position="8 -2 6" 
+               width="8" height="12"
+               rotation="0 0 0"
+               src="https://cdn.glitch.global/597f60d9-9084-4c60-b2a7-aea2a2fd555c/rosecranswoman2.png?v=1733109931482">
+      </a-image>
+     
+      <a-image 
+               position="4 -4 3" 
+               width="6.66" height="6.66"
+               rotation="0 90 0"
+               src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/tabele.png?v=1727386776441">
+      </a-image>
+      
+      <a-image 
+               position="10.5 -4 3" 
+               width="6.66" height="6.66"
+               rotation="0 90 0"
+               src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/tabele.png?v=1727386776441">
+      </a-image>
+
+      
+      <a-sky color="#ffffff"></a-sky>
+      
+    </a-scene>
+
+    <button class="back-button" onclick="goBack()">back to <br>menu</button>
+  </body>
+</html>

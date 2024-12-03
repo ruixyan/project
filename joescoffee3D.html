@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+        <link rel="stylesheet" href="styles3D.css"/>
+        <script src="script.js" defer></script>
+      </head>
+  <body>
+    <a-scene>
+
+     <a-camera position="12 1.6 27">
+      <a-cursor></a-cursor>
+     </a-camera>
+      
+      <a-assets>
+        <img id="texture" src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/Helleborus-%E2%80%98Onyx-Odyssey%E2%80%99.png?v=1726788967739">
+        <audio id="lofi-jazz" src="/audio/lofi-jazzhop-chillhop-praga-262035.mp3"></audio>
+      </a-assets>
+
+      <a-image 
+               position="-1 4 -3" 
+               width="36" height="23"
+               src="https://cdn.glitch.global/2c514651-d254-446e-8d2f-8a197cd45c68/joecoffeewall2.png?v=1729559704931">
+      </a-image>
+      
+      <a-image 
+               position="-18 4 15" 
+               width="36" height="23"
+               rotation="0 90 0"
+               src="https://cdn.glitch.global/2c514651-d254-446e-8d2f-8a197cd45c68/joecoffeewall1.png?v=1729559593209>">
+      </a-image>
+      
+      
+      
+      <a-image 
+               position="-10 -3 30" 
+               width="8" height="12"
+               rotation="0 80 0"
+               src="https://cdn.glitch.global/2c514651-d254-446e-8d2f-8a197cd45c68/joecoffeeperson1.png?v=1729559795926">
+      </a-image>
+      
+
+      <a-image 
+               position="-10 2 2" 
+               width="6" height="9"
+               rotation="0 25 0"
+               src="https://cdn.glitch.global/2c514651-d254-446e-8d2f-8a197cd45c68/joecoffeemaninback.png?v=1729562750105">
+      </a-image>
+      
+  
+      
+      <a-image 
+               position="-9 -1.4 1" 
+               width="18" height="12"
+               rotation="0 0 0"
+               src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/backtable.png?v=1727384820204">
+      </a-image>
+      
+            <a-image 
+               position="-9 -1.4 11" 
+               width="18" height="12"
+               rotation="0 0 0"
+               src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/backtable.png?v=1727384820204">
+      </a-image>
+      
+      <a-image 
+               position="-17.5 -3 6" 
+               width="10" height="6.66"
+               rotation="0 90 0"
+               src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/tabele.png?v=1727386776441">
+      </a-image>
+      
+      <a-image 
+               position="-10 -3 13" 
+               width="9" height="15"
+               rotation="0 30 0"
+               src="https://cdn.glitch.global/2c514651-d254-446e-8d2f-8a197cd45c68/joecoffeewomaninback.png?v=1729562743145">
+      </a-image>
+      
+      <a-image 
+               position="-.3 -3 6" 
+               width="10" height="6.66"
+               rotation="0 90 0"
+               src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/tabele.png?v=1727386776441">
+      </a-image>
+
+      <a-box id="toggle-button" 
+                position="0 1.5 -3" 
+                depth="0.1" 
+                height="0.5" 
+                width="0.5" 
+                color="#4CC3D9"
+                sound="src: #lofi-jazz;
+                      on: click">
+      </a-box>
+ 
+
+      <a-sky color="#ffffff"></a-sky>
+      
+    </a-scene>
+
+    <button class="back-button" onclick="goBack()">back to <br>menu</button>
+
+  </body>
+</html>

@@ -1,14 +1,17 @@
-const galleryContainer = document.querySelector(".gallery");
-const galleryItems = document.querySelectorAll(".gallery-item");
-const indicator = document.querySelector(".indicator");
+let galleryContainer = document.querySelector(".gallery");
+let galleryItems = document.querySelectorAll(".gallery-item");
+let indicator = document.querySelector(".indicator");
 
-const defaultItemFlex = "0 1 20px";
-const hoverItemFlex = "0 1 600px";
+let defaultItemFlex = "0 1 80px";
+let hoverItemFlex = "0 1 800px";
+let defaultOpacity = 1;
+let hoverOpacity = 0.2;
 
-const updateGalleryItems = () => {
+let updateGalleryItems = () => {
     galleryItems.forEach((item) => {
-        // Set flex based on the hover state
+        // Set flex and opacity based on the hover state
         item.style.flex = item.isHovered ? hoverItemFlex : defaultItemFlex;
+        item.style.opacity = item.isHovered ? defaultOpacity : hoverOpacity;
     });
 };
 
@@ -34,7 +37,7 @@ galleryItems.forEach((item) => {
 
 // Update indicator position on mouse move
 galleryContainer.addEventListener("mousemove", (e) => {
-    const rect = galleryContainer.getBoundingClientRect();
+    let rect = galleryContainer.getBoundingClientRect();
     indicator.style.left = `${e.clientX - rect.left}px`; // Corrected method call
 });
 
@@ -42,3 +45,6 @@ function goBack() {
     // Logic for going back; could be a history.back() or any custom logic
     window.history.back();
 }
+
+
+

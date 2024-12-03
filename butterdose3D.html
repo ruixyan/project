@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <link rel="stylesheet" href="styles3D.css"/>
+      <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a-scene>
+      
+      <a-camera position="15 1 30"></a-camera>
+      
+      <a-assets>
+        <img id="texture" src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/Helleborus-%E2%80%98Onyx-Odyssey%E2%80%99.png?v=1726788967739">
+        <a-asset-item id="crystals" src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/glowing_crystals.glb?v=1726791469279"></a-asset-item>
+      </a-assets>
+
+      <a-image 
+               position="-1 4 -3" 
+               width="36" height="24"
+               src="https://cdn.glitch.global/d644d49b-8699-426f-9415-f29408b6898d/butterdosebackwall.png?v=1732916812977">
+      </a-image>
+      
+      <a-image 
+               position="-18 4 15" 
+               width="36" height="23"
+               rotation="0 90 0"
+               src="https://cdn.glitch.global/d644d49b-8699-426f-9415-f29408b6898d/butterdoseleftwall.png?v=1732916833498">
+      </a-image>
+      
+
+      <a-image 
+               position="-13 -1 8" 
+               width="8" height="12"
+               rotation="0 45 0"
+               src="https://cdn.glitch.global/d644d49b-8699-426f-9415-f29408b6898d/butterdoseppltalking.png?v=1732916862006">
+      </a-image>
+      
+      
+      <a-image 
+               position="7 -2 16.2" 
+               width="5" height="8"
+               rotation="90 90 0"
+               src="https://cdn.glitch.global/d644d49b-8699-426f-9415-f29408b6898d/butterdosetabletop.png?v=1732916874229">
+      </a-image>
+      
+ 
+      
+      <a-image 
+               position="7 -4 18.8" 
+               width="8" height="6.66"
+               rotation="0 0 0"
+               src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/tabele.png?v=1727386776441">
+      </a-image>
+      
+      
+      <a-image 
+               position="7 -3 15" 
+               width="8" height="12"
+               rotation="0 45 0"
+               src="https://cdn.glitch.global/d644d49b-8699-426f-9415-f29408b6898d/butterdosegirl.png?v=1732916844710">
+      </a-image>
+     
+      <a-image 
+               position="7 -4 13.8" 
+               width="8" height="6.66"
+               rotation="0 0 0"
+               src="https://cdn.glitch.global/966d67a4-b90f-4f98-a2f4-63d09af257c5/tabele.png?v=1727386776441">
+      </a-image>
+
+      
+      <a-sky color="#ffffff"></a-sky>
+      
+    </a-scene>
+
+    <button class="back-button" onclick="goBack()">back to <br>menu</button>
+
+  </body>
+</html>
